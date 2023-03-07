@@ -7,147 +7,459 @@
 
 body {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    background-image: url("./assets/Rectangle\ 2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-header {
+    justify-content: center;
+    align-items: center;
+    background: url("./assets/Rectangle\ 2.png") no-repeat center/cover;
+  }
+  
+  /* Header */
+  header {
     display: flex;
     justify-content: center;
-}
-
-.nav {
+  }
+  
+  .nav {
+    
     display: flex;
     justify-content: space-between;
     margin-right: 9rem;
     font-size: 22px;
-}
-
-.name{
+  }
+  
+  .name {
     color: white;
     padding-top: 50px;
     margin-left: 4rem;
     font-size: 27px;
-}
-
-.card {
+  }
+  
+  /* Card */
+  .card {
     width: 1207px;
     height: 624px;
     margin-top: 40px;
     border-radius: 80px;
-    background-color: #231f20;
-    background-image: url("./assets/background-card.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-a {
-padding: 20px;
-text-decoration: none;
-color: white;
-}
-
-.menu {
+    background: #231f20 url("./assets/background-card.png") no-repeat center/cover;
+  }
+  
+  /* Links */
+  a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Menu */
+  .menu {
     padding-top: 50px;
-}
-
-.image img {
-    width:372px;
+  }
+  
+  /* Image */
+  .image img {
+    width: 372px;
     height: 456px;
     margin-left: 50px;
     margin-top: 50px;
-}
-
-.content{
+  }
+  
+  /* Content */
+  .content {
     display: flex;
     align-items: center;
     font-size: 50px;
-    
-}
-
-.frase {
+  }
+  
+  /* Phrase */
+  .frase {
     color: white;
     margin-left: 30px;
     margin-top: 60px;
     font-size: 60px;
-}
-
-spam {
+  }
+  
+  /* Span */
+  spam {
     color: #A37B39;
-}
-
-.about, .projects {
-    margin-left: 450px;
+  }
+  
+  /* Sections */
+  .about,
+  .projects {
+    margin-left: 180px;
     margin-top: 150px;
     color: white;
     font-size: 50px;
-}
-
-.description {
+  }
+  
+  /* Description */
+  .description {
     color: white;
     font-size: 24px;
-    margin-left: 450px;
-}
-.boxes {
+    margin-left: 250px;
+  }
+  
+  /* Boxes */
+  .boxes {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-
-
-}
-
-.box {
+  }
+  
+  .box {
     width: 250px;
     height: 250px;
     background-color: #D9D9D9;
     margin: 30px;
     border-radius: 40px;
-}
-
-.contact {
+  }
+  
+  /* Contact */
+  .contact {
     position: relative;
     color: white;
     font-size: 50px;
     margin-top: 150px;
-    margin-left: 400px;
-}
-
-.contact_frase {
+    margin-left: 50px;
+  }
+  
+  .contact_frase {
     position: absolute;
     bottom: 65px;
     left: 180px;
     font-size: 70px;
-}
-
-.retangulo {
+  }
+  
+  .retangulo {
     position: absolute;
     bottom: 150px;
-    left: 500px;
-}
-
-.icones {
+    left: 480px;
+  }
+  
+  .icones {
     position: absolute;
     bottom: 110px;
-    left: 750px;
-}
-
-.menu_down {
+    left: 700px;
+  }
+  
+  /* Menu down */
+  .menu_down {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-}
-
-footer {
+  }
+  
+  /* Footer */
+  footer {
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+    margin: 50px 0;
+  }
+
+/* media querys */
+
+@media screen and (max-width: 480px) {
+    body {
+      background-image: none;
+      background-color: #231f20;
+    }
+
+  
+    .name {
+      /* padding-top: 20px; 
+      margin-left: 1rem;
+      font-size: 18px; */
+      display: none;
+    }
+
+    header .nav {
+        justify-content: center;
+        margin-right: 0;
+
+    }
+
+    .menu a {
+        font-size: 14px;
+        display: block;
+        
+    }
+
+  
+    .card {
+      
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+
+    }
+  
+    .image img {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+  
+    .content {
+      font-size: 36px;
+    }
+  
+    .frase {
+      margin: 0;
+      font-size: 36px;
+      text-align: center;
+    }
+  
+    .about,
+    .projects {
+      margin-left: 0;
+      margin-top: 50px;
+      font-size: 36px;
+      text-align: center;
+    }
+  
+    .description {
+      font-size: 18px;
+      margin-left: 1rem;
+      text-align: left;
+    }
+  
+    .boxes {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .box {
+      width: 80%;
+      height: 200px;
+      margin: 20px 0;
+      border-radius: 20px;
+    }
+  
+    .contact {
+      font-size: 36px;
+      margin-top: 50px;
+      margin-left: 1rem;
+      text-align: left;
+    }
+  
+    .contact_frase {
+      position: static;
+      font-size: 36px;
+      text-align: center;
+    }
+  
+    .retangulo {
+      position: static;
+      margin: 20px auto;
+    }
+  
+    .icones {
+      position: static;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+  
+    .menu_down {
+      margin-top: 50px;
+    }
+  }
+
+    /* -------------------------- */
+ 
+ /*  @media screen and (max-width: 760px) {
+    body {
+      background-size: contain;
+    }
+  
+    header .nav {
+      margin-right: 4rem;
+    }
+  
+    .name {
+      font-size: 20px;
+      margin-left: 2rem;
+    }
+  
+    .card {
+      width: 90%;
+      height: auto;
+      margin-top: 2rem;
+      border-radius: 30px;
+    }
+  
+    .image img {
+      width: 70%;
+      height: auto;
+      margin: 0 auto;
+    }
+  
+    .content {
+      flex-direction: column;
+      text-align: center;
+      font-size: 40px;
+      margin-top: 2rem;
+    }
+  
+    .frase {
+      margin: 2rem auto;
+      font-size: 40px;
+      text-align: center;
+    }
+  
+    .about, .projects {
+      margin: 2rem auto;
+      text-align: center;
+      font-size: 40px;
+    }
+  
+    .description {
+      font-size: 18px;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .boxes {
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+  
+    .box {
+      width: 70%;
+      margin: 1rem auto;
+    }
+  
+    .contact {
+      margin: 2rem auto;
+      font-size: 40px;
+      text-align: center;
+    }
+  
+    .contact_frase {
+      position: static;
+      margin: 2rem auto;
+      font-size: 50px;
+      text-align: center;
+    }
+  
+    .retangulo {
+      position: static;
+      margin: 2rem auto;
+    }
+  
+    .icones {
+      position: static;
+      margin: 2rem auto;
+      text-align: center;
+    }
+  
+    .menu_down {
+      margin-top: 2rem;
+    }
+  
+    footer {
+      font-size: 16px;
+    }
+  }
+
+
+
+  @media screen and (max-width: 1200px) {
+    body {
+      background-size: contain;
+    }
+  
+    header .nav {
+      margin-right: 4rem;
+    }
+  
+    .name {
+      font-size: 20px;
+      margin-left: 2rem;
+    }
+  
+    .card {
+      width: 90%;
+      height: auto;
+      margin-top: 2rem;
+      border-radius: 30px;
+    }
+  
+    .image img {
+      width: 70%;
+      height: auto;
+      margin: 0 auto;
+    }
+  
+    .content {
+      flex-direction: column;
+      text-align: center;
+      font-size: 40px;
+      margin-top: 2rem;
+    }
+  
+    .frase {
+      margin: 2rem auto;
+      font-size: 40px;
+      text-align: center;
+    }
+  
+    .about, .projects {
+      margin: 2rem auto;
+      text-align: center;
+      font-size: 40px;
+    }
+  
+    .description {
+      font-size: 18px;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .boxes {
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+  
+    .box {
+      width: 70%;
+      margin: 1rem auto;
+    }
+  
+    .contact {
+      margin: 2rem auto;
+      font-size: 40px;
+      text-align: center;
+    }
+  
+    .contact_frase {
+      position: static;
+      margin: 2rem auto;
+      font-size: 50px;
+      text-align: center;
+    }
+  
+    .retangulo {
+      position: static;
+      margin: 2rem auto;
+    }
+  
+    .icones {
+      position: static;
+      margin: 2rem auto;
+      text-align: center;
+    }
+  
+    .menu_down {
+      margin-top: 2rem;
+    }
+  
+    footer {
+      font-size: 16px;
+    }
+  } */
