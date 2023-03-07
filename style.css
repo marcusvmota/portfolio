@@ -184,10 +184,13 @@ body {
     .menu a {
         font-size: 14px;
         display: block;
+        padding: 10px;
+        margin-bottom: 10px;
       
     }
  
     .menu {
+      display: flex;
         padding-top: 0;
     }
   
@@ -256,7 +259,9 @@ body {
       font-size: 36px;
       text-align: center;
     }
-  
+    .elipse {
+     display: none;
+    }
     .retangulo {
       position: static;
       margin: 20px auto;
