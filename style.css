@@ -409,14 +409,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     body {
         background: url("./assets/Rectangle\ 2.png") no-repeat center/cover;
@@ -427,8 +419,7 @@ body {
     }
   
     .name {
-      font-size: 20px;
-      margin-left: 2rem;
+      display: none;
     }
   
     .card {
