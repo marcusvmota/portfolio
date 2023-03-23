@@ -135,73 +135,96 @@ button {
 }
 
 @media screen and (max-width: 480px) {
-  @media screen and (max-width: 480px) {
-    body {
-      background-image: none;
-      background-color: #231f20;
-    }
-
-  
-    .name {
-      /* padding-top: 20px; 
-      margin-left: 1rem;
-      font-size: 18px; */
-      display: none;
-    }
-
-    header .nav {
-        justify-content: center;
-        margin-right: 0;
-
-    }
-
-    .menu a {
-        font-size: 14px;
-        display: block;
-        padding: 10px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-      
-    }
- 
-    .menu {
-      display: flex;
-        padding-top: 0;
-    }
-  
-    .card {
-      
-      width: 100%;
-      height: auto;
-      border-radius: 0;
-
-    }
+  body {
+    background-image: none;
+    background-color: #231f20;
   }
 
-    form {
-        width: 300px;
-        /* margin-bottom: 20px; */
-    }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
-        background: url("./assets/Rectangle\ 2.png") no-repeat center/cover;
-    }
-  
-    header .nav {
+  .name {
+    /* padding-top: 20px; 
+    margin-left: 1rem;
+    font-size: 18px; */
+    display: none;
+  }
+
+  header .nav {
       justify-content: center;
       margin-right: 0;
 
   }
 
+  .menu a {
+      font-size: 14px;
+      display: block;
+      padding: 10px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    
+  }
 
-    .menu {
+  .menu {
+    display: flex;
       padding-top: 0;
+  }
+
+  .card {
+    
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+
+  }
+
+  form {
+      width: 300px;
+      /* margin-bottom: 20px; */
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+      background: url("./assets/Rectangle\ 2.png") no-repeat center/cover;
+  }
+  
+
+  header .nav {
+      justify-content: center;
+      margin-right: 0;
+  }
+
+  .nav a {
+      align-items: center;
+      margin-right: 0;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .card {
+    width: 800px;
+    height: auto;
+    margin-top: 2rem;
+    border-radius: 30px;
+  }
+
+  form {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background: url("./assets/Rectangle\ 2.png") no-repeat center/cover;
+    }
+  
+    header .nav {
+      margin-right: 4rem;
     }
   
     .name {
-        display: none;
+      display: none;
     }
   
     .card {
@@ -209,10 +232,5 @@ button {
       height: auto;
       margin-top: 2rem;
       border-radius: 30px;
-    }
-
-    form {
-        width: 300px;
-        margin-bottom: 20px;
     }
 }
