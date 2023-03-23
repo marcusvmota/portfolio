@@ -135,6 +135,7 @@ button {
 }
 
 @media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     body {
       background-image: none;
       background-color: #231f20;
@@ -157,10 +158,14 @@ button {
     .menu a {
         font-size: 14px;
         display: block;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
       
     }
  
     .menu {
+      display: flex;
         padding-top: 0;
     }
   
@@ -171,10 +176,11 @@ button {
       border-radius: 0;
 
     }
+  }
 
     form {
         width: 300px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
 }
 
@@ -188,6 +194,16 @@ button {
       margin-right: 0;
 
   }
+
+    /* .menu a {
+      font-size: 14px;
+      display: block;
+    
+    } */
+
+    .menu {
+      padding-top: 0;
+    }
   
     .name {
         display: none;
